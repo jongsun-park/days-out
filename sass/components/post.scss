@@ -1,0 +1,28 @@
+.post {
+  h2 {
+    font-size: 4rem;
+    max-width: 27ch;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .content {
+      margin-right: 2rem;
+
+      .content-header h3 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      .content-info ul {
+        list-style: none;
+        padding-left: 0;
+      }
+    }
+    .images {
+      overflow-x: scroll;
+      flex: 1;
+      scrollbar-width: none;
+    }
+  }
+}

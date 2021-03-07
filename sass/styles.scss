@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Montserrat&family=Source+Serif+Pro:wght@300&display=swap");
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --heading-font-family: "Source Serif Pro", serif;
+  --cursive-font-family: "Lobster Two", cursive;
+  --secondary-color: #009938;
+  --dark-background-color: #404040;
+  --light-background-color: #dbe1dd;
+}
+
+@import "./components/header.scss";
+@import "./components/post.scss";
+@import "./components/subscribe.scss";
+@import "./components/cursor.scss";
+@import "./components/mobile.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family);
+  color: #000;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.loading {
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+}
+
+.cursive-font {
+  font-family: var(--cursive-font-family);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+main {
+  padding: 30px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+img {
+  display: block;
+}

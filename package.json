@@ -1,0 +1,21 @@
+{
+  "name": "days-out",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "cleanup": "rm -rf .cache dist",
+    "dev": "npm run cleanup && parcel index.html",
+    "build": "npm run cleanup && parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "1.26.11"
+  },
+  "devDependencies": {
+    "gsap": "3.5.1",
+    "parcel": "^2.0.0-beta.1"
+  }
+}

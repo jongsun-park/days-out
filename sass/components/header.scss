@@ -1,0 +1,34 @@
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+footer {
+  color: white;
+  background-color: var(--dark-background-color);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: initial;
+  font-family: var(--font-family);
+}
+
+.navigation {
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      cursor: pointer;
+    }
+    li + li {
+      margin-left: 1rem;
+    }
+    li.active {
+      font-weight: bold;
+    }
+  }
+}
